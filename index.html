@@ -33,29 +33,11 @@ h1 {
   word-break: break-all;
 }
 
-.row {
-  margin: 10px -16px;
-}
 
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
 
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
 
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
+
 
 /* Content */
 .content {
@@ -105,22 +87,22 @@ h1 {
 </div>
 
 <!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column nature">
+<div class="w3-row">
+  <div class="w3-third nature">
     <div class="content">
       <img src="images/drvo-1.jpg" alt="Mountains" style="width:100%">
       <h4>Mountains</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column nature">
+  <div class="w3-third nature">
     <div class="content">
     <img src="images/drvo-2.jpg" alt="Lights" style="width:100%">
       <h4>Lights</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column nature">
+  <div class="w3-third nature">
     <div class="content">
     <img src="images/drvo-3.jpg" alt="Nature" style="width:100%">
       <h4>Forest</h4>
@@ -128,7 +110,7 @@ h1 {
     </div>
   </div>
   
-  <div class="column cars">
+  <!-- <div class="column cars">
     <div class="content">
       <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
       <h4>Retro</h4>
@@ -147,9 +129,9 @@ h1 {
     <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
       <h4>Classic</h4>
       <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-
+    </div>https://anzelikam.github.io/christmas-decorations/
+  </div> -->
+<!-- 
   <div class="column people">
     <div class="content">
       <img src="/w3images/people1.jpg" alt="Car" style="width:100%">
@@ -170,7 +152,7 @@ h1 {
       <h4>Woman</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
-  </div>
+  </div> -->
 <!-- END GRID -->
 </div>
 
@@ -181,7 +163,7 @@ h1 {
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
-  x = document.getElementsByClassName("column");
+  x = document.getElementsByClassName("w3-third");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "show");
