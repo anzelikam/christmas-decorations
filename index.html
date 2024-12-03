@@ -3,6 +3,9 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
 <title>Božićne Dekoracije</title>
 <style>
 * {
@@ -15,14 +18,19 @@ body {
 
 }
 
-/* body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-} */
+body {
+  background-color: #000018;
+  
+}
 
 
 /* Center website */
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .main {
   max-width: 1000px;
   margin: auto;
@@ -32,12 +40,6 @@ h1 {
   font-size: 50px;
   word-break: break-all;
 }
-
-
-
-
-
-
 
 /* Content */
 .content {
@@ -64,8 +66,12 @@ h1 {
 }
 
 .btn.active {
-  background-color: #666;
-  color: white;
+  background-color: #000018;
+  color: #d2386c;
+}
+
+.demo {
+  padding: 5px;
 }
 </style>
 </head>
@@ -74,41 +80,111 @@ h1 {
 <!-- MAIN (Center website) -->
 <div class="main">
 
-<h1>MYLOGO.COM</h1>
-<hr>
 
-<h2>PORTFOLIO</h2>
-
-<div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+<div style="margin: 7px">
+  <h1 class="w3-text-pink indie-flower-regular">zimska čarolija</h1>
+  <hr>
+  
+  <h3 class="w3-text-white">Gde svaki ukras ima svoju priču...</h3>
+  
+  <div id="myBtnContainer"class="w3-margin-bottom">
+    <button class="btn active" onclick="filterSelection('all')"> Sve</button>
+    <button class="btn" onclick="filterSelection('mini')"> Mini</button>
+    <button class="btn" onclick="filterSelection('stone')"> Na sto</button>
+    <button class="btn" onclick="filterSelection('visece')">Viseće</button>
+  </div>
 </div>
 
 <!-- Portfolio Gallery Grid -->
-<div class="w3-row">
-  <div class="w3-third nature">
+<div class="w3-row"style="margin-bottom: 50px">
+  <div class="w3-third stone demo">
     <div class="content">
-      <img src="images/drvo-1.jpg" alt="Mountains" style="width:100%">
-      <h4>Mountains</h4>
-      <p>Lorem ipsum dolor..</p>
+      <a href="images/drvo-1.jpg" target="_blank"><img src="images/drvo-1.jpg" alt="Božićno Drvo" style="width:100%"></a>
+      <h6 style="color:#191966">Mini Božićno Drvo (šifra 1)</h6>
+      <h4 style="color: #d2386c">1200.00 RSD</h4>
+      
     </div>
   </div>
-  <div class="w3-third nature">
+  <div class="w3-third stone demo">
     <div class="content">
-    <img src="images/drvo-2.jpg" alt="Lights" style="width:100%">
-      <h4>Lights</h4>
-      <p>Lorem ipsum dolor..</p>
+      <a href="images/drvo-2.jpg" target="_blank"><img src="images/drvo-2.jpg" alt="Božićno Drvo" style="width:100%"></a>
+      <h6 style="color:#191966">Mini Božićno Drvo (šifra 2)</h6>
+      <h4 style="color: #d2386c">1300.00 RSD</h4>
     </div>
   </div>
-  <div class="w3-third nature">
+  <div class="w3-third stone demo">
     <div class="content">
-    <img src="images/drvo-3.jpg" alt="Nature" style="width:100%">
-      <h4>Forest</h4>
-      <p>Lorem ipsum dolor..</p>
+      <a href="images/drvo-3.jpg" target="_blank"><img src="images/drvo-3.jpg" alt="Božićno Drvo" style="width:100%"></a> 
+      <h6 style="color:#191966">Mini Božićno Drvo (šifra 3)</h6>
+      <h4 style="color: #d2386c">1400.00 RSD</h4>
     </div>
   </div>
+  <div class="w3-row ">
+    <div class="w3-third mini demo">
+      <div class="content">
+        <a href="images/jelkice.jpg" target="_blank"><img src="images/jelkice.jpg" alt="Jelkice" style="width:100%"></a>
+        <h6 style="color:#191966">Jelkice, komad (šifra 4)</h6>
+        <h4 style="color: #d2386c">250.00 RSD</h4>
+      </div>
+    </div>
+    <div class="w3-third mini demo">
+      <div class="content">
+        <a href="images/jelkice.jpg" target="_blank"><img src="images/jelkice.jpg" alt="Jelkice" style="width:100%"></a>
+        <h6 style="color:#191966">Jelkice, komad (šifra 5)</h6>
+        <h4 style="color: #d2386c">240.00 RSD</h4>
+      </div>
+    </div>
+    <div class="w3-third mini demo">
+      <div class="content">
+        <a href="images/jelkice.jpg" target="_blank"><img src="images/jelkice.jpg" alt="Jelkice" style="width:100%"></a>
+        <h6 style="color:#191966">Jelkice, komad (šifra 6)</h6>
+        <h4 style="color: #d2386c">230.00 RSD</h4>
+      </div>
+    </div>
+    <div class="w3-row ">
+      <div class="w3-third visece demo">
+        <div class="content">
+          <img src="images/jelkice.jpg" alt="Mountains" style="width:100%">
+          <h4>Mountains</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="w3-third visece demo">
+        <div class="content">
+        <img src="images/drvo-2.jpg" alt="Lights" style="width:100%">
+          <h4>Lights</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="w3-third visece demo">
+        <div class="content">
+        <img src="images/drvo-3.jpg" alt="Nature" style="width:100%">
+          <h4>Forest</h4>
+          <p>Lorem ipsum dolor..</p>
+        </div>
+      </div>
+      <div class="w3-row ">
+        <div class="w3-third stone demo">
+          <div class="content">
+            <img src="images/jelkice.jpg" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="w3-third mini demo">
+          <div class="content">
+          <img src="images/drvo-2.jpg" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="w3-third visece demo">
+          <div class="content">
+          <img src="images/drvo-3.jpg" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
   
   <!-- <div class="column cars">
     <div class="content">
